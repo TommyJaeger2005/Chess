@@ -1,6 +1,6 @@
 # Python Chess
 
-A chess game built with Python and Tkinter, featuring local single gameplay with an AI opponent.
+A chess game built with Python and Tkinter, featuring local single player gameplay with an AI opponent.
 
 <img width="892" height="869" alt="Screenshot 2026-09-28 at 11 23 23 AM" src="https://github.com/user-attachments/assets/53879464-a9b1-4d41-8445-3b22a2b6364e" />
 
