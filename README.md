@@ -1,9 +1,8 @@
 # Python Chess
 
-A simple two-player chess game built with Python and Tkinter.
+A chess game built with Python and Tkinter, featuring local two-player gameplay and an AI opponent.
 
-<img width="892" height="869" alt="Screenshot 2026-09-28 at 11 23 23 AM" src="https://github.com/user-attachments/assets/53879464-a9b1-4d41-8445-3b22a2b6364e" />
-
+<img width="892" height="869" alt="Screenshot 2026-09-28 at 11 23 23 AM" src="https://github.com/user-attachments/assets/53879464-a9b1-4d41-8445-3b22a2b6364e" />
 
 ## Features
 
@@ -13,6 +12,9 @@ A simple two-player chess game built with Python and Tkinter.
 - Pawn promotion (queen, rook, bishop, knight)
 - Check, checkmate, and stalemate detection
 - Click-to-move interface
+- AI opponent using minimax
+- Alpha-beta pruning to reduce unnecessary search
+- Material-based and positional board evaluation
 
 ## Requirements
 
@@ -42,10 +44,11 @@ Pawn promotion and check/checkmate/stalemate are handled automatically with popu
 
 | File | Purpose |
 |---|---|
-| `Main.py` | starts the game window |
+| `Main.py` | Starts the game window |
 | `Board.py` | Holds the board state |
 | `Logic.py` | Turn handling, click events, check/checkmate detection |
 | `Moves.py` | Legal move rules for each piece |
+| `Opponent.py` | AI opponent, minimax search, alpha-beta pruning, and board evaluation |
 | `UI.py` | Drawing the board and pieces |
 | `Assets.py` | Loads piece images and popup windows |
 
@@ -53,4 +56,3 @@ Pawn promotion and check/checkmate/stalemate are handled automatically with popu
 
 - No move history / undo
 - No draw by repetition or 50-move rule
-- No AI opponent (two-player local only)
