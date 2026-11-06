@@ -136,7 +136,7 @@ class Assets:
             UI.REDRAW()
         
         button_images = []
-        for value in options.items():
+        for value in options.values():
             img = Assets.PIECE_MAP[value if prefix == "White" else -value]
             btn = tk.Button(button_frame, image = img, command=lambda v = value: MAKE_CHOICE(v))
             btn.pack(side = "left", padx = 5)

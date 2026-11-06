@@ -21,7 +21,8 @@ class Moves:
 
         # diagonal capture
         if to_row == from_row + direction and abs(to_col - from_col) == 1:
-            if Board.LOGICAL_BOARD[to_row][to_col] != 0:
+            target = Board.LOGICAL_BOARD[to_row][to_col]
+            if target != 0 and (target > 0) != (PAWN_COLOR > 0):
                 return True
 
         # 2 square first move
@@ -104,6 +105,9 @@ class Moves:
     # CHECK MOVEMENT IS NOT DIAGONALLY
         row_diff = to_row - from_row
         col_diff = to_col - from_col
+        if row_diff == 0 and col_diff == 0:
+            return False
+
         if abs(row_diff) != abs(col_diff):
             return False
     
